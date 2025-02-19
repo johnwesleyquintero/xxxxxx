@@ -105,7 +105,7 @@ SOFTWARE.
 
 ---
 
-🤝 Credits
+## 🤝 Credits
 
 #### 💡 Developed by: Wesley Quintero
 #### 🚀 Inspired by: The infinity of the cosmos
