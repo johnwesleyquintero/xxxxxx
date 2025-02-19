@@ -1,0 +1,24 @@
+{
+  "name": "nebula-suite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "minify": "npx cssnano style.css -o style.min.css && npx terser apps/hub/main.js -o apps/hub/main.min.js && npx terser apps/seo-tool/seo.js -o apps/seo-tool/seo.min.js",
+    "build:hub": "cd apps/hub && npm install && npm run build",
+    "build:seo": "cd apps/seo-tool && npm install && npm run build",
+    "build:ppc": "cd apps/ppc-tool && npm install && npm run build",
+    "deploy": "npm run build:hub && npm run build:seo && npm run build:ppc"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "terser": "^5.39.0",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "nebula-suite": "file:"
+  }
+}

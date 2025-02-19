@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Suite - PPC Analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="index.html" aria-label="Home">Home</a></li>
+                <li><a href="seo.html" aria-label="SEO Analysis">SEO Analysis</a></li>
+                <li><a href="ppc.html" aria-label="PPC Analysis">PPC Analysis</a></li>
+                <li><a href="restock.html" aria-label="Restock Recommendation">Restock Recommendation</a></li>
+                <li><a href="use-cases.html" aria-label="Use Cases">Use Cases</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="ppc-analysis">
+                <h2 class="gradient-heading">PPC Analysis </h2>
+                
+                <section id="campaign-inputs">
+                    <h3>Campaign Details Input</h3>
+                    <p>Enter your PPC campaign details to get an analysis.</p>
+                    
+                    <div class="input-group">
+                        <label for="keywords">Target Keywords:</label>
+                        <textarea id="keywords" placeholder="Enter keywords separated by commas" aria-label="Target Keywords Input"></textarea>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="ad-copy">Ad Copy:</label>
+                        <textarea id="ad-copy" placeholder="Enter your ad copy here" aria-label="Ad Copy Input"></textarea>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="landing-page-url">Landing Page URL:</label>
+                        <input type="url" id="landing-page-url" placeholder="Enter landing page URL" aria-label="Landing Page URL Input">
+                    </div>
+                </section>
+                
+                <section id="analysis-options">
+                    <h3>Analysis Options</h3>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="keyword-analysis" name="analysis-option" value="keyword" aria-label="Keyword Analysis Option">
+                        <label for="keyword-analysis">Keyword Relevance Analysis</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="ad-copy-analysis" name="analysis-option" value="ad-copy" aria-label="Ad Copy Analysis Option">
+                        <label for="ad-copy-analysis">Ad Copy Effectiveness Analysis</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="landing-page-analysis" name="analysis-option" value="landing-page" aria-label="Landing Page Analysis Option">
+                        <label for="landing-page-analysis">Landing Page Optimization Analysis</label>
+                    </div>
+                </section>
+                
+                <section id="call-to-action">
+                    <button id="analyze-ppc-button" class="cta-button" aria-label="Analyze PPC Campaign">Analyze PPC Campaign</button>
+                </section>
+                
+                <section id="ppc-results">
+                    <!-- Analysis results will be displayed here -->
+                </section>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="/components/ppc.js"></script>
+</body>
+</html>

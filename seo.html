@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nebula Suite - SEO Analysis</title>
+  <meta name="description" content="Analyze and optimize your product titles and sales points for better SEO with Nebula Suite.">
+  <meta name="keywords" content="SEO, analysis, product title, sales points, keyword research">
+  <meta name="author" content="Nebula Suite">
+  <meta property="og:title" content="Nebula Suite - SEO Analysis">
+  <meta property="og:description" content="Analyze and optimize your product titles and sales points for better SEO with Nebula Suite.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nebula Suite - SEO Analysis">
+  <meta name="twitter:description" content="Analyze and optimize your product titles and sales points for better SEO with Nebula Suite.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="index.html" aria-label="Home">Home</a></li>
+        <li><a href="seo.html" aria-label="SEO Analysis">SEO Analysis</a></li>
+        <li><a href="ppc.html" aria-label="PPC Analysis">PPC Analysis</a></li>
+        <li><a href="restock.html" aria-label="Restock Recommendation">Restock Recommendation</a></li>
+        <li><a href="use-cases.html" aria-label="Use Cases">Use Cases</a></li>
+      </ul>
+    </aside>
+    <main class="content">
+      <h2 class="gradient-heading">SEO Analysis</h2>
+
+      <!-- Step 1: Enter Product Title -->
+      <section>
+        <h3>Step 1: Enter Product Title</h3>
+        <ul>
+          <li>Provide a concise and descriptive product title.</li>
+          <li>Keep the title under 60 characters for optimal SEO.</li>
+        </ul>
+        <div class="input-group">
+          <label for="product-title">Product Title:</label>
+          <input type="text" id="product-title" placeholder="Enter the product title" aria-label="Product Title Input">
+          <span id="title-char-count">0/60</span>
+        </div>
+      </section>
+
+      <!-- Step 2: Add Sales Points -->
+      <section>
+        <h3>Step 2: Add Sales Points</h3>
+        <ul>
+          <li>Highlight key features and benefits.</li>
+          <li>Use bullet points for clarity.</li>
+        </ul>
+        <div class="input-group">
+          <label for="bullet-points">Sales Points (one per line):</label>
+          <textarea id="bullet-points" placeholder="Enter each bullet point on a new line" aria-label="Bullet Points Input" maxlength="1000"></textarea>
+        </div>
+      </section>
+
+      <hr>
+
+      <!-- Preview Section -->
+      <section id="preview-section">
+        <h3>Preview</h3>
+        <p><strong>Product Title:</strong> <span id="preview-title"></span></p>
+        <p><strong>Sales Points:</strong></p>
+        <ul id="preview-sales-points">
+          <!-- Sales points will be dynamically added here -->
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- Call to Action -->
+      <section>
+        <button id="analyze-button" aria-label="Start Analysis">Start Analysis</button>
+      </section>
+
+      <section id="seo-results"></section>
+
+      <!-- Competitor Analysis Section -->
+      <section>
+        <h3>Competitor Analysis</h3>
+        <p>Enter competitor URLs or product listings to compare keyword usage.</p>
+        <div class="input-group">
+          <label for="competitor-url">Competitor URL:</label>
+          <input type="text" id="competitor-url" placeholder="Enter competitor URL" aria-label="Competitor URL Input">
+        </div>
+        <div class="input-group">
+          <button id="compare-button" aria-label="Compare Competitor">Compare</button>
+        </div>
+        <section id="competitor-results"></section>
+      </section>
+
+      <!-- Snippet Preview Section -->
+      <section id="snippet-preview-section">
+        <h3>Snippet Preview</h3>
+        <div class="snippet">
+          <p class="snippet-title"><span id="snippet-title"></span></p>
+          <p class="snippet-url">yourwebsite.com</p>
+          <p class="snippet-description"><span id="snippet-description"></span></p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/components/seoAnalysis.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Nebula Suite - SEO Analysis",
+      "description": "Analyze and optimize your product titles and sales points for better SEO with Nebula Suite.",
+      "url": "https://yourwebsite.com/seo.html"
+    }
+  </script>
+</body>
+</html>

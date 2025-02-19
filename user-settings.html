@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Suite - User Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <header>
+                <h1 class="gradient-heading">User Settings</h1>
+            </header>
+            <!-- Theme Toggle Button -->
+            <button id="themeToggle" class="nebula-button">
+              <span class="dark:hidden">🌙 Activate Dark Matter</span>
+              <span class="hidden dark:inline">☀️ Embrace Solar Flare</span>
+            </button>
+
+            <!-- Add your user settings table or content here -->
+        </main>
+    </div>
+    <script>
+      const toggle = document.getElementById('themeToggle');
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+        localStorage.setItem('theme', isDark ? 'light' : 'dark');
+      });
+    </script>
+
+    <script>
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+</body>
+</html>

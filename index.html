@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nebula Suite - Quantum Marketing Analysis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <main class="content">
+      <header id="index-header">
+        <h1 class="gradient-heading">Nebula Suite</h1>
+        <p>Quantum-Level SEO & PPC Toolset</p>
+      </header>
+
+      <section id="index-summary" class="summary">
+        <h2>Summary</h2>
+        <p><strong>2020, 2019, 2024/01</strong></p>
+      </section>
+      <p>Welcome to the Nebula Suite! Dive into advanced marketing analysis and optimize your strategies. Choose an option below to get started:</p>
+      <div id="index-buttons" class="button-container">
+        <a href="seo.html" class="button" aria-label="Go to SEO Analysis">🔍 SEO Analysis</a>
+        <a href="ppc.html" class="button" aria-label="Go to PPC Analysis">📊 PPC Analysis</a>
+      </div>
+      <div class="button-container">
+        <a href="#" class="button cta-button" aria-label="Get Started">🚀 Get Started</a>
+      </div>
+
+      <section id="quick-links" class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">View Tutorials</a></li>
+          <li><a href="#">Contact Support</a></li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+  <script type="module">
+    // Dynamically insert sidebar
+    fetch('sidebar.html')
+      .then(response => response.text())
+
+
+      .then(sidebarHtml => {
+        const container = document.querySelector('.container');
+        container.insertAdjacentHTML('afterbegin', sidebarHtml);
+      });
+  </script>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
