@@ -1,4 +1,4 @@
-# 🌌 Nebula Suite 🚀
+# 🌌 Basic Suite 🚀
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a599665c-862e-4da0-bc52-d9b616a4dc22/deploy-status)](https://app.netlify.com/sites/nebula-suite/deploys)
 
